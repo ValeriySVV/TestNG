@@ -1,0 +1,13 @@
+com\homework\phone\phones\builders\IphoneBuilder.class
+com\homework\phone\phones\name\Nokia.class
+com\homework\phone\phones\name\models\GalaxyFlip.class
+com\homework\phone\phones\name\Samsung.class
+com\homework\phone\Phone.class
+com\homework\phone\phones\name\Huawei.class
+com\homework\phone\phones\name\models\GalaxyS.class
+com\homework\phone\phones\name\models\GalaxyM.class
+Main.class
+com\homework\phone\phones\name\models\GalaxyA.class
+com\homework\phone\phones\name\Iphone.class
+com\homework\phone\enums\NamePhone.class
+com\homework\phone\phones\interfaceFunction\Functional.class

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.1.dtd">
+<suite name="All Test Suite">
+    <test name="TestClassHomeWork1" thread-count="5" parallel="classes">
+        <classes>
+            <class name="testNG.TestClassHomeWork1"></class>
+        </classes>
+    </test>
+    <test name="Group Tests">
+        <classes>
+                <class name="testNG.TestClassHomeWork2"/>
+                <class name="testNG.TestClassHomeWork3"/>
+        </classes>
+        <groups>
+            <run>
+                <include name="firstgroup"/>
+                <include name="thirdgroup"/>
+                <exclude name="secondgroup"/>
+            </run>
+        </groups>
+        </test>
+</suite>

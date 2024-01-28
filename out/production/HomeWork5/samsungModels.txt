@@ -1,0 +1,101 @@
+id;model;color;RAM;diagonal;camera;usability
+1;Galaxy Z Flip5;Red;8;6.2;48;true
+2;Galaxy S21;Phantom;8;6.2;12;true
+3;Galaxy A52;Awesome;6;6.5;64;true
+4;Galaxy Note 20;Mystic Bronze;8;6.7;12;true
+5;Galaxy A32;Awesome Blue;4;6.4;64;true
+6;Galaxy Z Fold 2;Mystic Bronze;12;7.6;12;true
+7;Galaxy M32;Black;6;6.4;64;true
+8;Galaxy A72;Awesome White;8;6.7;64;true
+9;Galaxy S21 Ultra;Phantom Silver;12;6.8;108;true
+10;Galaxy Note Lite;Aura Black;6;6.7;12;true
+11;Galaxy S10;Prism White;8;6.1;12;true
+12;Galaxy A51;Prism Crush Black;4;6.5;48;true
+13;Galaxy Z Flip;Mirror Purple;8;6.7;12;true
+14;Galaxy M42;Prism Dot Gray;6;6.6;48;true
+15;Galaxy A12;Blue;4;6.5;48;true
+16;Galaxy Note 20;Mystic White;12;6.9;108;true
+17;Galaxy A22;Black;4;6.4;48;true
+18;Galaxy S20 FE;Cloud Navy;6;6.5;12;true
+19;Galaxy M51;Celestial Black;6;6.7;64;true
+20;Galaxy A02s;Red;3;6.5;13;true
+21;Galaxy S9;Midnight Black;4;5.8;12;true
+22;Galaxy A31;Prism Crush Blue;4;6.4;48;true
+23;Galaxy Fold;Mystic Bronze;12;7.3;12;true
+24;Galaxy M62;Laser Green;6;6.7;64;true
+25;Galaxy A21s;Black;4;6.5;48;true
+26;Galaxy S20 Ultra;Cosmic Gray;12;6.9;108;true
+27;Galaxy A03s;White;3;6.5;13;true
+28;Galaxy Note 9;Ocean Blue;6;6.4;12;true
+29;Galaxy A71;Prism Crush Silver;6;6.7;64;true
+30;Galaxy M02;Blue;2;6.5;13;true
+31;Galaxy S10e;Canary Yellow;6;5.8;12;true
+32;Galaxy A41;Prism Crush Blue;4;6.1;48;true
+33;Galaxy Z Fold;Mystic Black;12;7.6;12;true
+34;Galaxy M12;Black;4;6.5;48;true
+35;Galaxy A52s;Awesome White;6;6.5;64;true
+36;Galaxy A11;Black;2;6.4;13;true
+37;Galaxy Note 10;Aura Black;8;6.3;12;true
+38;Galaxy A21;Red;3;6.5;16;true
+39;Galaxy S8;Orchid Gray;4;5.8;12;true
+40;Galaxy M31s;Mirage Black;6;6.5;64;true
+41;Galaxy A02;Black;2;6.5;13;true
+42;Galaxy S20;Cloud Blue;8;6.7;12;true
+43;Galaxy A22;Gray;4;6.4;48;true
+44;Galaxy M02s;Red;3;6.5;13;true
+45;Galaxy Note 8;Maple Gold;6;6.3;12;true
+46;Galaxy A51 5G;Prism Cube Black;6;6.5;48;true
+47;Galaxy M11;Metallic Blue;3;6.4;13;true
+48;Galaxy S21 FE;Cloud Mint;6;6.4;12;true
+49;Galaxy A32 5G;Awesome Black;4;6.5;64;false
+50;Galaxy A12s;Silver;4;6.5;48;true
+51;Galaxy S21 Plus;Phantom Black;8;6.7;12;true
+52;Galaxy A42 5G;Prism Dot White;6;6.6;48;true
+53;Galaxy M52;Ocean Blue;6;6.7;64;true
+54;Galaxy A82;Mystic Silver;8;6.7;64;true
+55;Galaxy S22;Emerald Green;12;6.5;108;true
+56;Galaxy M72;Charcoal Black;8;6.7;64;true
+57;Galaxy A22 Lite;Lavender;4;6.4;48;true
+58;Galaxy S21 Edition;Cloud White;6;6.4;12;true
+59;Galaxy A62;Rose Gold;6;6.6;64;true
+60;Galaxy S11;Aurora Blue;8;6.1;108;true
+61;Galaxy M82;Midnight Blue;8;6.7;64;true
+62;Galaxy A52 Lite;Awesome Violet;4;6.5;64;true
+63;Galaxy S21 Note;Mystic Gray;8;6.7;12;true
+64;Galaxy M92;Pearl White;8;6.7;64;true
+65;Galaxy A02 Plus;Red;3;6.5;13;true
+66;Galaxy S20 Lite;Cloud Pink;6;6.5;12;true
+67;Galaxy A52 Plus;Awesome Cyan;6;6.5;64;true
+68;Galaxy M42 Lite;Prism Dot Black;6;6.6;48;true
+69;Galaxy S12;Titanium Silver;12;6.5;108;true
+70;Galaxy M112;Space Gray;4;6.5;48;true
+71;Galaxy A32 Lite;Prism Crush Green;4;6.5;64;true
+72;Galaxy S21 Pro;Phantom Blue;8;6.7;12;true
+73;Galaxy A92;Sunset Orange;8;6.6;64;true
+74;Galaxy M52s;Arctic White;8;6.7;64;true
+75;Galaxy A112;Turquoise;4;6.5;48;true
+76;Galaxy S22 Ultra;Cosmic Black;16;6.8;108;true
+77;Galaxy M122;Blush Pink;6;6.5;48;true
+78;Galaxy A72s;Prism Crush Red;8;6.7;64;true
+79;Galaxy S21 Lite;Cloud Yellow;6;6.4;12;true
+80;Galaxy A142;Coral;3;6.5;13;true
+81;Galaxy M32 Lite;Midnight Black;6;6.4;64;true
+82;Galaxy S22 Plus;Celestial Silver;12;6.7;108;true
+83;Galaxy A102;Cherry Red;4;6.5;48;true
+84;Galaxy M82s;Ocean Green;8;6.7;64;true
+85;Galaxy A62s;Sunrise Gold;6;6.6;64;true
+86;Galaxy S21 Prime;Mystic Pink;8;6.7;12;true
+87;Galaxy M92 Lite;Sky Blue;8;6.7;64;true
+88;Galaxy A22 Plus;Purple;4;6.4;48;true
+89;Galaxy S22 Lite;Cloud Green;6;6.4;12;true
+90;Galaxy A52 Pro;Prism Crush Orange;6;6.5;64;true
+91;Galaxy M112s;Goldenrod;4;6.5;48;true
+92;Galaxy S21 Zoom;Mystic Orange;8;6.7;12;true
+93;Galaxy A92 Lite;Silver Frost;8;6.6;64;true
+94;Galaxy M52 Lite;Aqua Blue;8;6.7;64;true
+95;Galaxy A112s;Magenta;4;6.5;48;true
+96;Galaxy S22e;Amethyst;8;6.5;108;true
+97;Galaxy M122 Lite;Emerald Green;6;6.5;48;true
+98;Galaxy A72 Lite;Lunar Gray;8;6.7;64;true
+99;Galaxy S21 Plus Ultra;Starlight Blue;12;6.7;12;true
+100;Galaxy A142s;Topaz;3;6.5;13;true
