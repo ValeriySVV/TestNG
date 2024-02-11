@@ -1,6 +1,11 @@
 package testNG;
 
-import org.testng.annotations.*;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 public class TestClassHomeWork3 {
     @Test(groups = "secondgroup")
