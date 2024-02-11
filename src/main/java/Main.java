@@ -144,8 +144,8 @@ public class Main {
         System.out.println(samsungsMap);*/
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("y-M-d-h-m-s");
-        Date data1 = dateFormat.parse("2024-02-15-23-15-02");
-        Date data2 = dateFormat.parse("2023-11-31-15-10-10");
+        Date data1 = dateFormat.parse("2024-02-06-23-15-02");
+        Date data2 = dateFormat.parse("2023-11-08-15-10-10");
         int differentDays = (int) ((data1.getTime() - data2.getTime())/(24*60*60*1000));
 
         System.out.println("Різницю між цими датами у днях " + differentDays);
