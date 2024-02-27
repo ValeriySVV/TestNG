@@ -14,6 +14,8 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.stream.Stream;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -21,7 +23,11 @@ import java.util.stream.Stream;
 
 public class Main {
 
+    private static Logger logger;
+
     private static final String FILE_NAME = "resources/samsungModels.txt";
+
+    private static final String DELIMITER = ";";
     private static java.util.stream.Collectors Collectors;
 
     static String[] readFileUsingScanner(String fileName) {
@@ -62,40 +68,61 @@ public class Main {
     }
 
     private static void getSamsungsData(String[] data, List<Samsung> samsungs) {
+        System.setProperty("java.util.logging.config.file",System.getenv("LOGGER_CONFIG"));
+
+
+        logger = Logger.getLogger(Main.class.getName());
+        logger.log(Level.CONFIG, "Зчитування даних з файлу " + FILE_NAME);
+
+
+
         var start = System.currentTimeMillis();
         //List<Samsung> samsungs = new LinkedList<>();
         //getSamsungData(data, samsungs);
         //Stream<Samsung> stream = samsungs.stream();
         for (int i = 1; i < data.length; i++) {
-            var pieces = data[i].split(";");
+            //var pieces = data[i].split(DELIMITER);
             Samsung samsung = null;
-            //System.out.println(data);
-            switch (pieces[4].toLowerCase()) {
-                case "galaxyS":
-                    samsung = new GalaxyA(Integer.parseInt(pieces[0]), pieces[1], pieces[2], Integer.parseInt(pieces[3]),
-                            Integer.parseInt(pieces[5]), Boolean.parseBoolean(pieces[6]));
-                    break;
-                case "galaxyM":
-                    samsung = new GalaxyFlip(Integer.parseInt(pieces[0]), pieces[1], pieces[2], Integer.parseInt(pieces[3]),
-                            Integer.parseInt(pieces[5]), Boolean.parseBoolean(pieces[6]));
-                    break;
-                case "galaxyA":
-                    samsung = new GalaxyM(Integer.parseInt(pieces[0]), pieces[1], pieces[2], Integer.parseInt(pieces[3]),
-                            Integer.parseInt(pieces[5]), Boolean.parseBoolean(pieces[6]));
-                    break;
-                case "galaxyFlip":
-                    samsung = new GalaxyS(Integer.parseInt(pieces[0]), pieces[1], pieces[2], Integer.parseInt(pieces[3]),
-                            Integer.parseInt(pieces[5]), Boolean.parseBoolean(pieces[6]));
-                    break;
-                default:
-                    samsung = new Samsung(Integer.parseInt(pieces[0]), pieces[1], pieces[2], Integer.parseInt(pieces[3]),
-                            Integer.parseInt(pieces[5]), Boolean.parseBoolean(pieces[6]));
-                    break;
+            if (i > 0) {
+                var pieces = data[i].split(DELIMITER);
+                //System.out.println(pieces);
 
+                //System.out.println(data);
+                switch (pieces[4].toLowerCase()) {
+                    case "galaxyS":
+                        samsung = new GalaxyS(Integer.parseInt(pieces[0]), pieces[1], pieces[2], Integer.parseInt(pieces[3]),
+                                Integer.parseInt(pieces[5]), Boolean.parseBoolean(pieces[6]));
+                        logger.log(Level.WARNING, "Створення моделі телефону з класу galaxyS: " + samsung);
+                        break;
+                    case "galaxyM":
+                        samsung = new GalaxyM(Integer.parseInt(pieces[0]), pieces[1], pieces[2], Integer.parseInt(pieces[3]),
+                                Integer.parseInt(pieces[5]), Boolean.parseBoolean(pieces[6]));
+                        logger.log(Level.WARNING, "Створення моделі телефону з класу galaxyM: " + samsung);
+                        break;
+                    case "galaxyA":
+                        samsung = new GalaxyA(Integer.parseInt(pieces[0]), pieces[1], pieces[2], Integer.parseInt(pieces[3]),
+                                Integer.parseInt(pieces[5]), Boolean.parseBoolean(pieces[6]));
+                        logger.log(Level.WARNING, "Створення моделі телефону з класу galaxyA: " + samsung);
+                        break;
+                    case "galaxyFlip":
+                        samsung = new GalaxyFlip(Integer.parseInt(pieces[0]), pieces[1], pieces[2], Integer.parseInt(pieces[3]),
+                                Integer.parseInt(pieces[5]), Boolean.parseBoolean(pieces[6]));
+                        logger.log(Level.INFO, "Створення моделі телефону з класу galaxyFlip: " + samsung);
+                        break;
+                    default:
+                        samsung = new Samsung(Integer.parseInt(pieces[0]), pieces[1], pieces[2], Integer.parseInt(pieces[3]),
+                                Integer.parseInt(pieces[5]), Boolean.parseBoolean(pieces[6]));
+                        logger.log(Level.SEVERE, "Створення моделі телефону з класу galaxy: " + samsung);
+                        logger.log(Level.WARNING, "Створення моделі телефону з класу galaxy: " + samsung);
+                        logger.log(Level.INFO, "Створення моделі телефону з класу galaxy: " + samsung);
+                        logger.log(Level.FINE, "Створення моделі телефону з класу galaxy: " + samsung);
+                        logger.log(Level.FINER, "Створення моделі телефону з класу galaxy: " + samsung);
+                        break;
+
+                }
+                samsungs.add(samsung);
+                System.out.println("Phone characteristics:" + samsung);
             }
-            samsungs.add(samsung);
-            System.out.println("Phone characteristics:" + samsung);
-
         }
         System.out.println();
         System.out.println("Імпорт даних із файлу становить " + (System.currentTimeMillis() - start));
@@ -144,8 +171,8 @@ public class Main {
         System.out.println(samsungsMap);*/
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("y-M-d-h-m-s");
-        Date data1 = dateFormat.parse("2024-02-15-23-15-02");
-        Date data2 = dateFormat.parse("2023-11-31-15-10-10");
+        Date data1 = dateFormat.parse("2024-02-06-23-15-02");
+        Date data2 = dateFormat.parse("2023-11-08-15-10-10");
         int differentDays = (int) ((data1.getTime() - data2.getTime())/(24*60*60*1000));
 
         System.out.println("Різницю між цими датами у днях " + differentDays);
